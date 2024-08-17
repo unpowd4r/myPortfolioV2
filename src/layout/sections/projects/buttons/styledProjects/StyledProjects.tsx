@@ -17,10 +17,9 @@ export const ButtonsStyled = styled.div`
 
 export const Cards = styled.div`
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	text-align: center;
-	gap: 5px;
+	justify-content: center;
+	/* flex-wrap: wrap; */
+	gap: 10px;
 `
 
 export const CardProject = styled.div`
@@ -33,6 +32,7 @@ export const Photo = styled.img`
 `
 
 export const PhotoContainer = styled.div`
+	max-width: 270px;
 	position: relative;
 	overflow: hidden;
 `

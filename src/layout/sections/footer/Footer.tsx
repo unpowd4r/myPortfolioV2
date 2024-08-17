@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import wave from '../../../components/img/footerWaves/Wave.svg'
 
 export const Footer = () => {
 	return (
@@ -10,8 +11,17 @@ export const Footer = () => {
 }
 
 const FooterSection = styled.footer`
-	text-align: center;
-	min-height: 243px;
+	color: #fff;
 
-	background-color: #24335c;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	min-height: 243px;
+	background: #222;
+	background-image: url(${wave}), url(${wave});
+	background-size: cover, auto;
+	background-position: center, bottom;
+	background-repeat: no-repeat;
 `
