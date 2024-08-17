@@ -29,6 +29,9 @@ const MyInfoCard = styled.div`
 
 	width: 563px;
 	height: 491px;
+
+	border-radius: 0 100px;
+	backdrop-filter: blur(20px);
 	background: linear-gradient(
 		132deg,
 		rgba(255, 255, 255, 0.5) 0%,
