@@ -11,7 +11,7 @@ export const MainPhoto = styled.section`
 
 	min-width: 1158px;
 	min-height: 507px;
-	border: 2px solid #838383;
+	border: 2px solid ${theme.colors.solidColor};
 	border-radius: 200px 0 200px 0;
 
 	backdrop-filter: blur(20px);
@@ -35,6 +35,13 @@ export const MainButtons = styled.div`
 	gap: 10px;
 
 	button {
+		display: flex;
+
+		justify-content: center;
+		align-items: center;
+
+		font-size: 15px;
+		font-weight: 600;
 		color: ${theme.colors.font};
 		border-radius: 20px;
 		width: 200px;
@@ -42,12 +49,43 @@ export const MainButtons = styled.div`
 
 		background-color: ${theme.colors.accent};
 		margin-right: 32px;
+
+		transition: all 0.2s ease;
+
+		h5 {
+			transition: all 0.3s ease;
+		}
+
+		img {
+			opacity: 0;
+			transition: all 0.3s ease;
+		}
+
+		&:hover {
+			/* gap: 15px; */
+
+			img {
+				opacity: 1;
+				transform: translateX(6px);
+			}
+
+			h5 {
+				transform: translateX(-6px);
+			}
+		}
 	}
 
 	a {
 		font-weight: 600;
 		font-size: 16px;
 		line-height: 1.5;
+
 		color: #6c92ff;
+
+		transition: all 0.2s ease;
+
+		&:hover {
+			color: ${theme.colors.font};
+		}
 	}
 `
