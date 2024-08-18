@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/myPortfolioV2/static/css/main.31d6cfe0.css",
-    "main.js": "/myPortfolioV2/static/js/main.1a27cd0e.js",
+    "main.js": "/myPortfolioV2/static/js/main.b84d71d5.js",
     "static/js/787.25eaef86.chunk.js": "/myPortfolioV2/static/js/787.25eaef86.chunk.js",
     "static/media/me.svg": "/myPortfolioV2/static/media/me.2ac718d207e8d52656977beb5551c48c.svg",
     "static/media/Rectangle 2-3.png": "/myPortfolioV2/static/media/Rectangle 2-3.9f608c657b5373d94b07.png",
@@ -31,13 +31,14 @@
     "static/media/Wave.svg": "/myPortfolioV2/static/media/Wave.ea5d36e02fa0eb623091887387cc6db2.svg",
     "static/media/skill-icons_css.svg": "/myPortfolioV2/static/media/skill-icons_css.df52530e1a598346429844a7f461ada6.svg",
     "static/media/skill-icons_html.svg": "/myPortfolioV2/static/media/skill-icons_html.3f8f8ba2c21fb5dc23b60db0b8097db3.svg",
+    "static/media/Arrow-Right 1.svg": "/myPortfolioV2/static/media/Arrow-Right 1.c74af8a31bd331d7b24d34723387d780.svg",
     "static/media/vector.svg": "/myPortfolioV2/static/media/vector.bf061b81bde85e11c3a03c84bce2e212.svg",
     "static/media/edit.svg": "/myPortfolioV2/static/media/edit.fb798d919486f52119fe97663f1c486f.svg",
-    "main.1a27cd0e.js.map": "/myPortfolioV2/static/js/main.1a27cd0e.js.map",
+    "main.b84d71d5.js.map": "/myPortfolioV2/static/js/main.b84d71d5.js.map",
     "787.25eaef86.chunk.js.map": "/myPortfolioV2/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.1a27cd0e.js"
+    "static/js/main.b84d71d5.js"
   ]
 }
