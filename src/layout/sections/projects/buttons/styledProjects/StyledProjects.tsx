@@ -4,9 +4,8 @@ export const TitleProject = styled.h2`
 	text-align: center;
 `
 
-export const ProjectSection = styled.div`
+export const ProjectSection = styled.section`
 	min-height: 1245px;
-	background-color: #c5e9ea;
 `
 
 export const ButtonsStyled = styled.div`

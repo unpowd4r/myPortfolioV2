@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import cardImage from '../../../components/img/infoImg/card.svg'
 
-export const MyInfo = styled.div`
+export const MyInfo = styled.section`
 	display: flex;
 	justify-content: space-around;
 	align-items: center;

@@ -80,7 +80,7 @@ const FormSendMessage = styled.div`
 	background-color: #424141;
 `
 
-const ContactUsSection = styled.div`
+const ContactUsSection = styled.section`
 	display: flex;
 	flex-direction: column;
 	align-items: center;

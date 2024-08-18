@@ -12,17 +12,13 @@ export const Services = () => {
 	)
 }
 
-const ServicesAll = styled.div`
+const ServicesAll = styled.section`
 	height: 100vh;
-
-	background-color: #57adf8;
 `
 
 const ServiceCards = styled.div`
 	display: flex;
 	justify-content: center;
-
-	background-color: #57adf8;
 `
 
 const Title = styled.h2`

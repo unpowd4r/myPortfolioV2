@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import editIcon from '../../../../components/icons/services-icons/edit.svg'
 import notebookIcon from '../../../../components/icons/services-icons/notebook-2.svg'
 import playIcon from '../../../../components/icons/services-icons/video-play.svg'
+import { theme } from '../../../../styles/Theme'
 
 const servicesInfo = [
 	{
@@ -35,7 +36,6 @@ export const ServicesCard = () => {
 
 const ServiceCard = styled.div`
 	display: flex;
-	/* justify-content: space-between; */
 	gap: 50px;
 `
 
@@ -45,5 +45,5 @@ const Block = styled.div`
 	width: 334px;
 	height: 402px;
 
-	background-color: #5c37ff;
+	background-color: ${theme.colors.cardsColor};
 `

@@ -19,8 +19,8 @@ function App() {
 			<Services />
 			<Learning />
 			<ContactSection />
-			<FixedElement />
 			<Footer />
+			<FixedElement />
 		</div>
 	)
 }

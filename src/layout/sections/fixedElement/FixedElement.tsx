@@ -1,29 +1,46 @@
 import styled from 'styled-components'
-import socialIcon from '../../../components/icons/sociAL.svg'
+import instIcon from '../../../components/icons/fixedElements-icons/instIcon.svg'
+import tgIcon from '../../../components/icons/fixedElements-icons/tgIcon.svg'
+import wuIcon from '../../../components/icons/fixedElements-icons/wuIcon.svg'
+import { theme } from '../../../styles/Theme'
 
 export const FixedElement = () => {
 	return (
 		<FixedEl>
-			<ImgIcons src={socialIcon} alt='Social Icons' />
+			<a href='#'>
+				<ImgIcons src={instIcon} alt='Social Icons' />
+			</a>
+			<a href='#'>
+				<ImgIcons src={wuIcon} alt='Social Icons' />
+			</a>
+			<a href='#'>
+				<ImgIcons src={tgIcon} alt='Social Icons' />
+			</a>
 		</FixedEl>
 	)
 }
 
-const ImgIcons = styled.img``
+const ImgIcons = styled.img`
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+	border-radius: 30%;
+`
 
 const FixedEl = styled.div`
+	width: 60px;
+	height: 200px;
+
 	display: flex;
 	justify-content: center;
+	flex-direction: column;
 	align-items: center;
 
-	height: 201px;
-	width: 61px;
+	gap: 16px;
 
 	position: fixed;
 	left: 0;
-	top: 50%;
-	transform: translateY(10%);
-	padding: 10px;
+	top: 60%;
 
-	background-color: #3838ff;
+	border-radius: 0 25px 25px 0;
+
+	background-color: ${theme.colors.secondaryBg};
 `

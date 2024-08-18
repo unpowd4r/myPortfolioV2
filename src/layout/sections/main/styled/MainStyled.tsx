@@ -1,7 +1,13 @@
-import styled from "styled-components";
+import styled from 'styled-components'
+import { theme } from '../../../../styles/Theme'
 
-export const MainSection = styled.div `
-    height: 100vh;
-
-    background-color: #7c5f5f;
+export const MainSection = styled.section`
+	height: 100vh;
+	min-width: 1440px;
+	background: linear-gradient(
+		to right,
+		${theme.colors.secondaryBg} 468px,
+		${theme.colors.primaryBg} 468px,
+		${theme.colors.primaryBg} 1360px
+	);
 `

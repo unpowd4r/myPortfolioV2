@@ -1,18 +1,15 @@
-import React from 'react';
-import {MainSkillsSection} from "../mainSkills/MainSkills";
-import {MainDesc} from "../mainDesc/MainDesc";
-import {MainSection} from "./styled/MainStyled";
-
+import { MainDesc } from '../mainDesc/MainDesc'
+import { MainSkillsSection } from '../mainSkills/MainSkills'
+import { Container } from './../../../components/Container'
+import { MainSection } from './styled/MainStyled'
 
 export const Main = () => {
-    return (
-        <MainSection>
-            <MainDesc/>
-            <MainSkillsSection/>
-        </MainSection>
-    );
-};
-
-
-
-
+	return (
+		<MainSection>
+			<Container>
+				<MainDesc />
+				<MainSkillsSection />
+			</Container>
+		</MainSection>
+	)
+}

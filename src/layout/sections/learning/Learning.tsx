@@ -23,7 +23,7 @@ export const Learning = () => {
 	)
 }
 
-const LearningSection = styled.div`
+const LearningSection = styled.section`
 	height: 100vh;
 `
 
