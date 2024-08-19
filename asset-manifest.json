@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/myPortfolioV2/static/css/main.31d6cfe0.css",
-    "main.js": "/myPortfolioV2/static/js/main.b84d71d5.js",
+    "main.js": "/myPortfolioV2/static/js/main.48f3b8eb.js",
     "static/js/787.25eaef86.chunk.js": "/myPortfolioV2/static/js/787.25eaef86.chunk.js",
     "static/media/me.svg": "/myPortfolioV2/static/media/me.2ac718d207e8d52656977beb5551c48c.svg",
     "static/media/Rectangle 2-3.png": "/myPortfolioV2/static/media/Rectangle 2-3.9f608c657b5373d94b07.png",
@@ -32,13 +32,14 @@
     "static/media/skill-icons_css.svg": "/myPortfolioV2/static/media/skill-icons_css.df52530e1a598346429844a7f461ada6.svg",
     "static/media/skill-icons_html.svg": "/myPortfolioV2/static/media/skill-icons_html.3f8f8ba2c21fb5dc23b60db0b8097db3.svg",
     "static/media/Arrow-Right 1.svg": "/myPortfolioV2/static/media/Arrow-Right 1.c74af8a31bd331d7b24d34723387d780.svg",
+    "static/media/ArrowIconServices.svg": "/myPortfolioV2/static/media/ArrowIconServices.70094f8bcfd363a6087acecc500852eb.svg",
     "static/media/vector.svg": "/myPortfolioV2/static/media/vector.bf061b81bde85e11c3a03c84bce2e212.svg",
     "static/media/edit.svg": "/myPortfolioV2/static/media/edit.fb798d919486f52119fe97663f1c486f.svg",
-    "main.b84d71d5.js.map": "/myPortfolioV2/static/js/main.b84d71d5.js.map",
+    "main.48f3b8eb.js.map": "/myPortfolioV2/static/js/main.48f3b8eb.js.map",
     "787.25eaef86.chunk.js.map": "/myPortfolioV2/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.b84d71d5.js"
+    "static/js/main.48f3b8eb.js"
   ]
 }
