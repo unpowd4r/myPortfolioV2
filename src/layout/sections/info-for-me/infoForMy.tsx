@@ -3,6 +3,7 @@ import instagramIcon from '../../../components/icons/infoForMe-icons/ins.svg'
 import arrowIcon from '../../../components/icons/infoForMe-icons/vector.svg'
 import whatsappIcon from '../../../components/icons/infoForMe-icons/wa.svg'
 import myPhoto from '../../../components/img/infoImg/me.svg'
+import { theme } from '../../../styles/Theme'
 import { MyInfo, MyPhoto } from './infoForMe.styled'
 
 export const InfoForMe = () => {
@@ -33,18 +34,28 @@ export const InfoForMe = () => {
 const IconsSocials = styled.div`
 	display: flex;
 	justify-content: flex-end;
-	gap: 10px;
+
+	gap: 16px;
+
+	padding-right: 24px;
+	padding-top: 30px;
+	padding-bottom: 18px;
 `
 
 const MyInfoCard = styled.div`
 	display: flex;
-	justify-content: space-between;
 	flex-direction: column;
 
-	width: 563px;
-	height: 491px;
+	margin-left: 116px;
 
-	border-radius: 100px 0 0 100px;
+	margin-top: 400px;
+	padding-left: 58px;
+
+	min-width: 562px;
+	min-height: 490px;
+
+	border: 1px solid ${theme.colors.font};
+	border-radius: 100px 0 100px 0;
 	backdrop-filter: blur(20px);
 	background: linear-gradient(
 		132deg,
@@ -56,6 +67,8 @@ const MyInfoCard = styled.div`
 		display: flex;
 		flex-direction: column;
 		gap: 10px;
+
+		padding-left: 12px;
 	}
 
 	li {
@@ -63,6 +76,9 @@ const MyInfoCard = styled.div`
 		color: #393939;
 		position: relative;
 		padding-left: 20px;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 1.36;
 	}
 
 	ul li::before {
@@ -73,7 +89,7 @@ const MyInfoCard = styled.div`
 		width: 18px;
 		height: 18px;
 		position: absolute;
-		left: 0;
+		left: -12px;
 		top: 50%;
 		transform: translateY(-50%);
 	}
@@ -81,6 +97,11 @@ const MyInfoCard = styled.div`
 
 const MyName = styled.h2`
 	color: #393939;
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 1.36;
+
+	margin-bottom: 22px;
 
 	span {
 		color: #2157f2;

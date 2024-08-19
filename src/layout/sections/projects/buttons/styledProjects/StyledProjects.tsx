@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { theme } from '../../../../../styles/Theme'
 
 export const TitleProject = styled.h2`
+	position: relative;
 	text-align: center;
 
 	font-weight: 600;
@@ -11,10 +12,33 @@ export const TitleProject = styled.h2`
 
 	padding-top: 60px;
 	padding-bottom: 5px;
+
+	/* &::before {
+		content: '';
+		display: inline-block;
+
+		width: 18px;
+		height: 18px;
+
+		top: 50%;
+		left: -10px;
+
+		position: absolute;
+
+		border-radius: 50%;
+		background: #d9d9d9;
+		background: linear-gradient(
+			180deg,
+			#a6bcfa 0%,
+			${theme.colors.accent} 100%
+		);
+	} */
 `
 
 export const ProjectSection = styled.section`
 	min-width: 1440px;
+	width: 100%;
+	min-height: 1245px;
 `
 
 export const ButtonsStyled = styled.div`
@@ -45,6 +69,7 @@ export const ButtonsStyled = styled.div`
 		&:hover {
 			border: none;
 			background: ${theme.colors.secondaryBg};
+			cursor: pointer;
 		}
 	}
 `
@@ -128,6 +153,8 @@ export const ButtonPreview = styled.div`
 		border-radius: 12px;
 
 		transition: all 0.2s ease;
+
+		cursor: pointer;
 
 		&:hover {
 			color: ${theme.colors.font};

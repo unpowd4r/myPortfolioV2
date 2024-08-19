@@ -20,7 +20,10 @@ export const Header = () => {
 }
 
 const ContainerHeader = styled.div`
-	min-width: 1362px;
+	min-width: 1024px;
+	max-width: 1440px;
+
+	width: 100%;
 
 	padding: 33px 35px;
 `

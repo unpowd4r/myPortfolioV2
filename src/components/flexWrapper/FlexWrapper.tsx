@@ -5,6 +5,8 @@ type FlexWrapperPropsType = {
 	justify?: string
 	align?: string
 	wrap?: string
+	minWidth?: string
+	maxWidth?: string
 }
 
 export const FlexWrapper = styled.div<FlexWrapperPropsType>`
@@ -13,4 +15,7 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
 	justify-content: ${props => props.justify || 'flex-start'};
 	align-items: ${props => props.align || 'stretch'};
 	flex-wrap: ${props => props.wrap || 'nowrap'};
+
+	min-width: ${props => props.minWidth || '100%'};
+	max-width: ${props => props.maxWidth || '100%'};
 `

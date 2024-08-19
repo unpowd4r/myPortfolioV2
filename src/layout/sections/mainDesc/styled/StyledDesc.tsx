@@ -40,8 +40,6 @@ export const MainButtons = styled.div`
 		justify-content: center;
 		align-items: center;
 
-		font-size: 15px;
-		font-weight: 600;
 		color: ${theme.colors.font};
 		border-radius: 20px;
 		width: 200px;
@@ -53,6 +51,8 @@ export const MainButtons = styled.div`
 		transition: all 0.2s ease;
 
 		h5 {
+			font-weight: 600;
+			font-size: 15px;
 			transition: all 0.3s ease;
 		}
 
@@ -62,7 +62,7 @@ export const MainButtons = styled.div`
 		}
 
 		&:hover {
-			/* gap: 15px; */
+			cursor: pointer;
 
 			img {
 				opacity: 1;
