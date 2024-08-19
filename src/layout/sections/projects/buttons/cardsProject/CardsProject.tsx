@@ -17,7 +17,7 @@ import {
 const cardProjects = [
 	{
 		id: 1,
-		image: project1,
+		image: project4,
 		name: 'Project 1',
 		desc: 'Story motion for sale',
 		descTwo: 'English cources',
@@ -38,7 +38,7 @@ const cardProjects = [
 	},
 	{
 		id: 4,
-		image: project4,
+		image: project1,
 		name: 'Project 4',
 		desc: 'Story motion for sale',
 		descTwo: 'English cources',
@@ -90,7 +90,7 @@ const CardItems = styled.div`
 	display: flex;
 	flex-direction: column;
 
-	gap: 30px;
+	gap: 45px;
 `
 
 // const TextContainer = styled.div`

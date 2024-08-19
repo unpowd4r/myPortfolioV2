@@ -8,20 +8,19 @@ export const TitleProject = styled.h2`
 	font-weight: 600;
 	font-size: 32px;
 	line-height: 1.36;
-	color: ${theme.colors.font};
 
 	padding-top: 60px;
-	padding-bottom: 5px;
+	padding-bottom: 58px;
 
-	/* &::before {
+	::before {
 		content: '';
 		display: inline-block;
 
 		width: 18px;
 		height: 18px;
 
-		top: 50%;
-		left: -10px;
+		top: 110px;
+		right: 49%;
 
 		position: absolute;
 
@@ -32,7 +31,7 @@ export const TitleProject = styled.h2`
 			#a6bcfa 0%,
 			${theme.colors.accent} 100%
 		);
-	} */
+	}
 `
 
 export const ProjectSection = styled.section`
@@ -77,6 +76,7 @@ export const ButtonsStyled = styled.div`
 export const Cards = styled.div`
 	display: flex;
 	justify-content: center;
+
 	gap: 38px;
 `
 

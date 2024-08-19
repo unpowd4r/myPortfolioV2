@@ -1,41 +1,60 @@
 import styled from 'styled-components'
+import { Container } from '../../../components/Container'
+import { theme } from '../../../styles/Theme'
 import { TitleProject } from '../projects/buttons/styledProjects/StyledProjects'
 
 export const Learning = () => {
 	return (
 		<LearningSection>
-			<TitleProject>Learning</TitleProject>
-			<p>JavaScript & TypeScript</p>
-			<WindowFigures>
-				<Figure></Figure>
-				<Figure></Figure>
-				<Figure></Figure>
-				<Figure></Figure>
-			</WindowFigures>
-			<p>HTML, CSS & React</p>
-			<WindowFigures>
-				<Figure></Figure>
-				<Figure></Figure>
-				<Figure></Figure>
-				<Figure></Figure>
-			</WindowFigures>
+			<Container>
+				<TitleProject>Learning</TitleProject>
+				<LearningTechnologies>JavaScript & TypeScript</LearningTechnologies>
+				<WindowFigures>
+					<Figure></Figure>
+					<Figure></Figure>
+					<Figure></Figure>
+					<Figure></Figure>
+				</WindowFigures>
+				<LearningTechnologies>HTML, CSS & React</LearningTechnologies>
+				<WindowFigures>
+					<Figure></Figure>
+					<Figure></Figure>
+					<Figure></Figure>
+					<Figure></Figure>
+				</WindowFigures>
+			</Container>
 		</LearningSection>
 	)
 }
 
 const LearningSection = styled.section`
-	height: 100vh;
+	min-height: 750px;
+	min-width: 1440px;
+	background-color: ${theme.colors.secondaryBg};
+`
+
+const LearningTechnologies = styled.h2`
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.36;
+
+	padding-bottom: 10px;
 `
 
 const Figure = styled.div`
 	width: 330px;
 	height: 192px;
 
-	background-color: #87beef;
+	box-shadow: 5px 6px 10px 0 rgba(0, 0, 0, 0.1);
+	background-color: #d9d9d9;
+
+	border-radius: 10px;
 `
 
 const WindowFigures = styled.div`
 	display: flex;
-	justify-content: space-around;
-	gap: 20px;
+	justify-content: center;
+	gap: 12px;
+
+	margin-bottom: 22px;
 `
