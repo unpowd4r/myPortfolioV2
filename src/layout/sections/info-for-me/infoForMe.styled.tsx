@@ -5,6 +5,7 @@ export const MyInfo = styled.section`
 	min-width: 1440px;
 	width: 100%;
 	min-height: 946px;
+	height: 100%;
 
 	display: flex;
 	justify-content: space-between;

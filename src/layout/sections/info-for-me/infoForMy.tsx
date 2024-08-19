@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import instagramIcon from '../../../components/icons/infoForMe-icons/ins.svg'
 import arrowIcon from '../../../components/icons/infoForMe-icons/vector.svg'
 import whatsappIcon from '../../../components/icons/infoForMe-icons/wa.svg'
-import myPhoto from '../../../components/img/infoImg/me.svg'
+import myPhoto from '../../../components/img/infoImg/me.png'
 import { theme } from '../../../styles/Theme'
 import { MyInfo, MyPhoto } from './infoForMe.styled'
 
