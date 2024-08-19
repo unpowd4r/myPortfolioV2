@@ -5,6 +5,7 @@ import locationIcon from '../../../components/icons/contactIcons/location.svg'
 import telephoneIcon from '../../../components/icons/contactIcons/telephone.svg'
 import tgIcon from '../../../components/icons/contactIcons/tg-icon.svg'
 import wuIcon from '../../../components/icons/contactIcons/wu-icon.svg'
+import { theme } from '../../../styles/Theme'
 import { TitleProject } from '../projects/buttons/styledProjects/StyledProjects'
 
 const socialIcons = [instIcon, tgIcon, wuIcon]
@@ -17,10 +18,10 @@ export const ContactSection = () => {
 				<MessageSection>
 					<h2>Get in touch</h2>
 					<FormSection>
-						<div>
+						<FormMailPhone>
 							<FormContacts type='E-mail' placeholder='E-mail' />
 							<FormContacts type='Phone' placeholder='Phone' />
-						</div>
+						</FormMailPhone>
 						<TextMessage placeholder='Message'></TextMessage>
 					</FormSection>
 					<SendMessageButton>Send</SendMessageButton>
@@ -66,7 +67,7 @@ const IconsSocial = styled.img`
 `
 
 const IconsSocialSection = styled.div`
-	display: flex;
+	gap: 22px;
 `
 
 const FormSendMessage = styled.div`
@@ -74,54 +75,144 @@ const FormSendMessage = styled.div`
 	justify-content: space-around;
 	align-items: center;
 
+	margin-bottom: 65px;
+
 	height: 462px;
 	width: 932px;
 
-	background-color: #424141;
+	background-color: ${theme.colors.cardsColor};
 `
 
 const ContactUsSection = styled.section`
+	min-height: 750px;
+	min-width: 1440px;
+
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 
 	height: 100vh;
 
-	background-color: #222;
+	background-color: ${theme.colors.primaryBg};
 `
 
 const MessageSection = styled.div`
 	display: flex;
 	flex-direction: column;
+
+	h2 {
+		font-weight: 500;
+		font-size: 36px;
+		line-height: 1.36;
+		color: ${theme.colors.font};
+
+		padding-bottom: 22px;
+	}
 `
-const FormSection = styled.div`
-	div {
-		display: flex;
+const FormSection = styled.div``
+
+const TextMessage = styled.textarea`
+	font-weight: 400;
+	font-size: 13px;
+
+	color: ${theme.colors.font};
+
+	width: 428px;
+	height: 150px;
+
+	border-radius: 10px;
+	border: none;
+
+	background: #393838;
+
+	margin-bottom: 36px;
+	padding: 16px 28px;
+
+	resize: none;
+
+	&::placeholder {
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 1.36;
+
+		text-transform: capitalize;
+
+		color: #a5a5a5;
+	}
+
+	&:focus-visible {
+		outline: 1px solid ${theme.colors.solidColor};
 	}
 `
 
-const TextMessage = styled.textarea`
-	width: 100%;
-	height: 152px;
+const FormMailPhone = styled.div`
+	display: flex;
+
+	gap: 8px;
+
+	margin-bottom: 24px;
 `
 
 const FormContacts = styled.input`
-	width: 100%;
-	height: 36px;
+	color: ${theme.colors.font};
+
+	font-weight: 400;
+	font-size: 13px;
+
+	width: 210px;
+	height: 35px;
+
+	border: none;
+	border-radius: 10px;
+
+	background: #393838;
+
+	padding: 10px 30px;
+
+	&::placeholder {
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 1.36;
+		color: #a5a5a5;
+		text-transform: capitalize;
+	}
+
+	&:focus-visible {
+		outline: 1px solid ${theme.colors.solidColor};
+	}
 `
 const SendMessageButton = styled.button`
+	cursor: pointer;
 	width: 118px;
 	height: 42px;
-	background-color: #2350d6;
+
+	color: ${theme.colors.font};
+
+	border-radius: 10px;
+
+	background-color: ${theme.colors.accent};
 `
 const ContactCard = styled.div`
-	gap: 20px;
 	display: flex;
 	justify-content: start;
+
+	margin-bottom: 36px;
+
+	gap: 26px;
+
 	div {
-		h3 {
-			margin: 0;
-			padding: 0;
+		h4 {
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 1.36;
+			color: ${theme.colors.font};
+		}
+
+		span {
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 1.36;
+			color: #8b8b8b;
 		}
 	}
 `

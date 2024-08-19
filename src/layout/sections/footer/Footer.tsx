@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import wave from '../../../components/img/footerWaves/Wave.svg'
+import { theme } from '../../../styles/Theme'
 
 export const Footer = () => {
 	return (
@@ -13,15 +14,35 @@ export const Footer = () => {
 const FooterSection = styled.footer`
 	color: #fff;
 
+	gap: 8px;
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 
-	min-height: 243px;
+	padding-top: 100px;
+
+	min-width: 1440px;
+	min-height: 244px;
+
 	background: #222;
 	background-image: url(${wave}), url(${wave});
 	background-size: cover, auto;
 	background-position: center, bottom;
 	background-repeat: no-repeat;
+
+	h2 {
+		font-family: 'Inter', sans-serif;
+		font-weight: 700;
+		font-size: 16px;
+		color: ${theme.colors.font};
+	}
+
+	span {
+		font-family: 'Inter', sans-serif;
+		font-weight: 400;
+		font-size: 11px;
+		color: ${theme.colors.font};
+	}
 `
