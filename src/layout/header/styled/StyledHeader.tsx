@@ -13,4 +13,13 @@ export const StyledHeader = styled.header`
 		${theme.colors.primaryBg} min(50vw, 468px),
 		${theme.colors.primaryBg} 1360px
 	);
+
+	@media (max-width: 768px) {
+		display: flex;
+		align-items: center;
+		padding: 0;
+		max-height: 75px;
+		background: none;
+		background-color: ${theme.colors.primaryBg};
+	}
 `

@@ -9,4 +9,9 @@ export const MainSection = styled.section`
 		${theme.colors.primaryBg} min(50vw, 468px),
 		${theme.colors.primaryBg} 1360px
 	);
+
+	@media (max-width: 768px) {
+		min-height: 985px;
+		padding-top: 50px;
+	}
 `

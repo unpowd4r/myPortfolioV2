@@ -1,13 +1,17 @@
 import styled from 'styled-components'
 import { theme } from '../../../../styles/Theme'
 
+type CardPropsIcon = {
+	icon: string
+}
+
 export const MainSkills = styled.div`
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 	margin-left: 250px;
 
-	gap: 14px;
+	gap: 12px;
 `
 
 export const IconsImg = styled.img`
@@ -26,28 +30,44 @@ export const IconsImg = styled.img`
 	border-radius: 100%;
 `
 
-export const Card = styled.div`
+export const Card = styled.div<CardPropsIcon>`
 	position: relative;
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	padding-top: 40px;
+	text-align: center;
 
 	font-weight: 600;
 	font-size: 20px;
-	line-height: 1.36;
 
 	height: 90px;
 	width: 160px;
-
-	margin-bottom: 35px;
 
 	box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.15);
 	background-color: ${theme.colors.secondaryBg};
 	border-radius: 24px;
 
-	gap: 30px;
-	p {
-		padding-top: 20px;
+	&::before {
+		content: '';
+		z-index: 9999;
+		position: absolute;
+
+		width: 55px;
+		height: 55px;
+
+		top: -32px;
+		left: 34%;
+
+		background-image: url(${props => props.icon});
+		background-size: 55px 55px;
+		background-repeat: no-repeat;
+
+		box-shadow: 0 0 0 12px ${theme.colors.primaryBg};
+		border-radius: 100%;
 	}
+
+	gap: 30px;
+
+	/* @media (max-width: 768px) {
+		width: 270px;
+		height: 208px;
+	} */
 `

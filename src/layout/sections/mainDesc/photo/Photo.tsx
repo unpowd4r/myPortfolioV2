@@ -12,4 +12,10 @@ export const Photo = () => {
 const PhotoMain = styled.img`
 	width: 400px;
 	height: 400px;
+
+	@media (max-width: 768px) {
+		width: 335px;
+		height: 335px;
+		margin-top: 30px;
+	}
 `

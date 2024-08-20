@@ -3,7 +3,7 @@ import { theme } from './../../../../styles/Theme'
 
 export const MainPhoto = styled.div`
 	position: relative;
-	z-index: 2;
+	z-index: 999;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -38,8 +38,12 @@ export const MainPhoto = styled.div`
 		line-height: 1.36;
 
 		transform: rotate(135deg);
-		top: -140px;
-		left: 430px;
+		top: -125px;
+		left: 522px;
+		@media (max-width: 768px) {
+			top: -100px;
+			left: 490px;
+		}
 	}
 
 	/* &::after {
@@ -58,6 +62,12 @@ export const MainPhoto = styled.div`
 		left: 88%;
 		top: 72%;
 	} */
+
+	@media (max-width: 768px) {
+		margin: 0 auto;
+		width: 590px;
+		height: 845px;
+	}
 `
 
 export const MyDescMain = styled.div`
@@ -125,5 +135,9 @@ export const MainButtons = styled.div`
 		&:hover {
 			color: ${theme.colors.font};
 		}
+	}
+
+	@media (max-width: 768px) {
+		padding-bottom: 68px;
 	}
 `
