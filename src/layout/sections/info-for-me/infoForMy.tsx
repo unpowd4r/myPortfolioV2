@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import instagramIcon from '../../../components/icons/infoForMe-icons/ins.svg'
 import arrowIcon from '../../../components/icons/infoForMe-icons/vector.svg'
 import whatsappIcon from '../../../components/icons/infoForMe-icons/wa.svg'
+import cardImage from '../../../components/img/infoImg/card.svg'
 import myPhoto from '../../../components/img/infoImg/me.png'
 import { theme } from '../../../styles/Theme'
 import { MyInfo, MyPhoto } from './infoForMe.styled'
@@ -9,27 +10,57 @@ import { MyInfo, MyPhoto } from './infoForMe.styled'
 export const InfoForMe = () => {
 	return (
 		<MyInfo>
-			<MyInfoCard>
-				<IconsSocials>
-					<img src={whatsappIcon} alt='whatsapp' />
-					<img src={instagramIcon} alt='instagram' />
-					<img src={arrowIcon} alt='arrow' />
-				</IconsSocials>
-				<MyName>
-					I'm <span>Frolov</span> <br /> Sergei Mikhailovich
-				</MyName>
-				<ul>
-					<li>I was born in Iran-Mashhad</li>
-					<li>I’m 25 years old</li>
-					<li>I have started my interest in this field from 2019</li>
-					<li>I’m designer , video editor , web developer and ...</li>
-					<li>My phone number in Iran +989212073348</li>
-				</ul>
-			</MyInfoCard>
-			<MyPhoto src={myPhoto} alt='Photo' />
+			<ContainerMyInfo>
+				<MyInfoCard>
+					<IconsSocials>
+						<img src={whatsappIcon} alt='whatsapp' />
+						<img src={instagramIcon} alt='instagram' />
+						<img src={arrowIcon} alt='arrow' />
+					</IconsSocials>
+					<MyName>
+						I'm <span>Frolov</span> <br /> Sergei Mikhailovich
+					</MyName>
+					<ul>
+						<li>I was born in Iran-Mashhad</li>
+						<li>I’m 25 years old</li>
+						<li>I have started my interest in this field from 2019</li>
+						<li>I’m designer , video editor , web developer and ...</li>
+						<li>My phone number in Iran +989212073348</li>
+					</ul>
+				</MyInfoCard>
+				<PhotosContainer>
+					<PhotoMap src={cardImage} />
+					<MyPhoto src={myPhoto} alt='Photo' />
+				</PhotosContainer>
+			</ContainerMyInfo>
 		</MyInfo>
 	)
 }
+
+const ContainerMyInfo = styled.div`
+	max-width: 1220px;
+	width: 100%;
+	min-height: 945px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* flex-wrap: wrap; */
+`
+
+const PhotosContainer = styled.div`
+	/* position: absolute; */
+	/* top: 0; */
+	/* left: 0; */
+	/* z-index: 1; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+`
+const PhotoMap = styled.img`
+	min-width: 880px;
+	min-height: 812px;
+`
 
 const IconsSocials = styled.div`
 	display: flex;
@@ -43,16 +74,20 @@ const IconsSocials = styled.div`
 `
 
 const MyInfoCard = styled.div`
+	/* position: relative; */
+	/* z-index: 2; */
 	display: flex;
 	flex-direction: column;
-
-	margin-left: 116px;
 
 	margin-top: 400px;
 	padding-left: 58px;
 
 	min-width: 562px;
+	max-width: 562px;
+	width: 100%;
 	min-height: 490px;
+	max-height: 490px;
+	height: 100%;
 
 	border: 1px solid ${theme.colors.font};
 	border-radius: 100px 0 100px 0;

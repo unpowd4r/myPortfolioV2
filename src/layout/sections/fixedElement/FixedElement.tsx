@@ -38,7 +38,7 @@ const FixedEl = styled.div`
 
 	position: fixed;
 	left: 0;
-	top: 60%;
+	top: 50%;
 
 	border-radius: 0 25px 25px 0;
 

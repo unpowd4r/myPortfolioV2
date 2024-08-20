@@ -11,8 +11,10 @@ export const Header = () => {
 			<ContainerHeader>
 				<FlexWrapper justify={'space-between'} align={'center'}>
 					<Logo />
-					<Menu />
-					<MoonLightNightTheme />
+					<HeaderMenuContainer>
+						<Menu />
+						<MoonLightNightTheme />
+					</HeaderMenuContainer>
 				</FlexWrapper>
 			</ContainerHeader>
 		</StyledHeader>
@@ -20,10 +22,18 @@ export const Header = () => {
 }
 
 const ContainerHeader = styled.div`
-	min-width: 1024px;
 	max-width: 1440px;
-
 	width: 100%;
 
+	margin: 0 auto;
+
 	padding: 33px 35px;
+`
+
+const HeaderMenuContainer = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	gap: 65px;
 `

@@ -4,7 +4,7 @@ import { theme } from '../../../../styles/Theme'
 export const StyledMenu = styled.nav`
 	ul {
 		display: flex;
-		gap: 40px;
+		gap: 58px;
 
 		li {
 			list-style-type: none;

@@ -4,9 +4,10 @@ import { theme } from '../../../../styles/Theme'
 export const MainSkills = styled.div`
 	display: flex;
 	justify-content: center;
-	margin-left: 200px;
+	flex-wrap: wrap;
+	margin-left: 250px;
 
-	gap: 13px;
+	gap: 14px;
 `
 
 export const IconsImg = styled.img`
@@ -36,8 +37,10 @@ export const Card = styled.div`
 	font-size: 20px;
 	line-height: 1.36;
 
-	height: 91px;
-	width: 161px;
+	height: 90px;
+	width: 160px;
+
+	margin-bottom: 35px;
 
 	box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.15);
 	background-color: ${theme.colors.secondaryBg};

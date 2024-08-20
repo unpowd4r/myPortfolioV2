@@ -29,7 +29,6 @@ export const Learning = () => {
 
 const LearningSection = styled.section`
 	min-height: 750px;
-	min-width: 1440px;
 	background-color: ${theme.colors.secondaryBg};
 `
 

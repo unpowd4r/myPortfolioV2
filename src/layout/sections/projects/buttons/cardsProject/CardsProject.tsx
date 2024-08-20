@@ -87,13 +87,11 @@ export const CardsProject = () => {
 }
 
 const CardItems = styled.div`
+	max-width: 1195px;
+	width: 100%;
+
 	display: flex;
 	flex-direction: column;
 
 	gap: 45px;
 `
-
-// const TextContainer = styled.div`
-// 	display: flex;
-// 	flex-direction: column;
-// `

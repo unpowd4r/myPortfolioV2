@@ -85,7 +85,6 @@ const FormSendMessage = styled.div`
 
 const ContactUsSection = styled.section`
 	min-height: 750px;
-	min-width: 1440px;
 
 	display: flex;
 	flex-direction: column;
@@ -191,6 +190,13 @@ const SendMessageButton = styled.button`
 	border-radius: 10px;
 
 	background-color: ${theme.colors.accent};
+
+	transition: all 0.2s ease;
+
+	&:hover {
+		background-color: ${theme.colors.font};
+		color: ${theme.colors.primaryBg};
+	}
 `
 const ContactCard = styled.div`
 	display: flex;

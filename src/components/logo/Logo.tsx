@@ -12,5 +12,5 @@ export const Logo = () => {
 }
 
 const LogoAs = styled.div`
-	margin-right: 806px;
+	/* margin-right: 806px; */
 `

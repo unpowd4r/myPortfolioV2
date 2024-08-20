@@ -35,17 +35,16 @@ export const TitleProject = styled.h2`
 `
 
 export const ProjectSection = styled.section`
-	min-width: 1440px;
-	width: 100%;
 	min-height: 1245px;
 `
 
 export const ButtonsStyled = styled.div`
-	min-width: 1160px;
+	max-width: 1160px;
 	width: 100%;
 
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 	gap: 40px;
 
 	margin-bottom: 55px;
@@ -74,23 +73,31 @@ export const ButtonsStyled = styled.div`
 `
 
 export const Cards = styled.div`
+	max-width: 1195px;
+	width: 100%;
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 
-	gap: 38px;
+	gap: 36px;
+	&:last-child {
+		margin-bottom: 82px;
+	}
 `
 
 export const CardProject = styled.div`
-	width: 23%;
+	width: 270px;
+	height: 395px;
 	border-radius: 26px;
 `
 export const Photo = styled.img`
 	width: 270px;
-	height: 394px;
+	height: 395px;
 `
 
 export const PhotoContainer = styled.div`
-	min-width: 270px;
+	width: 270px;
+	height: 395px;
 	position: relative;
 	overflow: hidden;
 `

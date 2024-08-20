@@ -23,8 +23,7 @@ const FooterSection = styled.footer`
 
 	padding-top: 100px;
 
-	min-width: 1440px;
-	min-height: 244px;
+	min-height: 245px;
 
 	background: #222;
 	background-image: url(${wave}), url(${wave});

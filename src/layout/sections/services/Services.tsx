@@ -14,7 +14,6 @@ export const Services = () => {
 }
 
 const ServicesAll = styled.section`
-	min-width: 1440px;
 	min-height: 690px;
 `
 
