@@ -1,7 +1,9 @@
 import styled from 'styled-components'
 import { theme } from './../../../../styles/Theme'
 
-export const MainPhoto = styled.section`
+export const MainPhoto = styled.div`
+	position: relative;
+	z-index: 2;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -21,22 +23,41 @@ export const MainPhoto = styled.section`
 	backdrop-filter: blur(20px);
 	background: linear-gradient(
 		132deg,
-		rgba(57, 57, 57, 0.5) 0%,
-		rgba(0, 66, 255, 0.05) 100%
+		rgba(14, 22, 65, 0.174) 0%,
+		rgba(0, 68, 255, 0.093) 100%
 	);
 
-	/* &::before {
+	&::before {
 		position: absolute;
-		z-index: 900;
-		content: '';
-		background-image: url('../../../../components/icons/backgroundDecoration-icons/+.svg');
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
+		z-index: -1;
+		content: '+';
 
-		width: 200px;
-		height: 200px; 
-	}*/
+		color: ${theme.colors.secondaryBg};
+		font-weight: 600;
+		font-size: 150px;
+		line-height: 1.36;
+
+		transform: rotate(135deg);
+		top: -140px;
+		left: 430px;
+	}
+
+	/* &::after {
+		position: absolute;
+		z-index: -10;
+		content: '';
+		background: radial-gradient(
+			circle,
+			transparent 50%,
+			${theme.colors.secondaryBg} 50%
+		);
+		border-radius: 50%;
+		height: 152px;
+		width: 152px;
+
+		left: 88%;
+		top: 72%;
+	} */
 `
 
 export const MyDescMain = styled.div`

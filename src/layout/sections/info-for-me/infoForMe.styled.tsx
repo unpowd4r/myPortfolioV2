@@ -2,18 +2,14 @@ import styled from 'styled-components'
 import cardImage from '../../../components/img/infoImg/card.svg'
 
 export const MyInfo = styled.section`
-	position: relative;
 	min-height: 945px;
 
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content: space-between;
 
-	flex-wrap: wrap;
-
-	/* background-image: url(${cardImage});
+	background-image: url(${cardImage});
 	background-repeat: no-repeat;
-	background-position: 42px center; */
+	background-position: 42px center;
 	background-color: #a6bcfa;
 `
 

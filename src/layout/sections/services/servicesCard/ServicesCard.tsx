@@ -51,19 +51,21 @@ export const ServicesCard = () => {
 
 const ServiceCard = styled.div`
 	display: flex;
+	justify-content: center;
 	gap: 30px;
+	flex-wrap: wrap;
+
+	&:last-child {
+		margin-bottom: 55px;
+	}
 `
 
 const Block = styled.div`
 	padding-left: 60px;
 	padding-top: 115px;
 
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-
-	min-width: 335px;
-	min-height: 402px;
+	width: 335px;
+	height: 402px;
 
 	background-color: ${theme.colors.cardsColor};
 

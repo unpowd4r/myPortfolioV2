@@ -118,7 +118,7 @@ export const Overlay = styled.div`
 
 	background-color: #353535;
 	padding-left: 32px;
-	border-radius: 0 0 26px 26px;
+	border-radius: 0 0 25px 25px;
 	color: ${theme.colors.font};
 
 	transition: all 0.2s ease;
