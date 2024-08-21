@@ -104,4 +104,34 @@ const Block = styled.div`
 			height: 20px;
 		}
 	}
+
+	@media ${theme.media.tablet} {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		height: 336px;
+		width: 280px;
+
+		h2 {
+			font-weight: 500;
+			font-size: 26px;
+			line-height: 1.25;
+		}
+
+		p {
+			font-weight: 400;
+			font-size: 13px;
+
+			img {
+				height: 16px;
+				width: 16px;
+			}
+		}
+
+		img {
+			width: 62px;
+			height: 62px;
+		}
+	}
 `
