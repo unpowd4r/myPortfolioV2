@@ -40,7 +40,7 @@ export const MainPhoto = styled.div`
 		transform: rotate(135deg);
 		top: -125px;
 		left: 522px;
-		@media (max-width: 768px) {
+		@media ${theme.media.tablet} {
 			top: -100px;
 			left: 490px;
 		}
@@ -63,10 +63,15 @@ export const MainPhoto = styled.div`
 		top: 72%;
 	} */
 
-	@media (max-width: 768px) {
+	@media screen and (max-width: 1024px) {
+		margin-bottom: 50px;
+	}
+
+	@media ${theme.media.tablet} {
 		margin: 0 auto;
 		width: 590px;
 		height: 845px;
+		margin-bottom: 50px;
 	}
 `
 
@@ -137,7 +142,11 @@ export const MainButtons = styled.div`
 		}
 	}
 
-	@media (max-width: 768px) {
-		padding-bottom: 68px;
+	@media screen and (max-width: 1024px) {
+		padding-bottom: 48px;
+	}
+
+	@media ${theme.media.tablet} {
+		margin-bottom: 68px;
 	}
 `

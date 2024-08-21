@@ -43,4 +43,12 @@ const FixedEl = styled.div`
 	border-radius: 0 25px 25px 0;
 
 	background-color: ${theme.colors.secondaryBg};
+
+	@media screen and (max-width: 1024px) {
+		display: none;
+	}
+
+	@media ${theme.media.tablet} {
+		display: none;
+	}
 `

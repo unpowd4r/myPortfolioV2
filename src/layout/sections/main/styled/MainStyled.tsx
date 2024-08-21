@@ -10,7 +10,7 @@ export const MainSection = styled.section`
 		${theme.colors.primaryBg} 1360px
 	);
 
-	@media (max-width: 768px) {
+	@media ${theme.media.tablet} {
 		min-height: 985px;
 		padding-top: 50px;
 	}

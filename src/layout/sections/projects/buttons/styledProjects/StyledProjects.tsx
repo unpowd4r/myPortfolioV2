@@ -70,6 +70,14 @@ export const ButtonsStyled = styled.div`
 			cursor: pointer;
 		}
 	}
+
+	@media ${theme.media.tablet} {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: auto auto;
+		gap: 40px;
+		margin-bottom: 62px;
+	}
 `
 
 export const Cards = styled.div`
@@ -82,6 +90,12 @@ export const Cards = styled.div`
 	gap: 36px;
 	&:last-child {
 		margin-bottom: 82px;
+	}
+
+	@media ${theme.media.tablet} {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 38px;
 	}
 `
 

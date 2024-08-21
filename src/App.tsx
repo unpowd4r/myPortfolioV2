@@ -1,5 +1,6 @@
 import './App.css'
 import { Header } from './layout/header/Header'
+import { MainSkillMobileSection } from './layout/mobileSections/MainSkillMobileSection'
 import { ContactSection } from './layout/sections/contactSection/ContactSection'
 import { FixedElement } from './layout/sections/fixedElement/FixedElement'
 import { Footer } from './layout/sections/footer/Footer'
@@ -14,6 +15,7 @@ function App() {
 		<div className='App'>
 			<Header />
 			<Main />
+			<MainSkillMobileSection />
 			<Projects />
 			<InfoForMe />
 			<Services />

@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import photo from '../../../../components/img/photo.png'
+import { theme } from '../../../../styles/Theme'
 
 export const Photo = () => {
 	return (
@@ -13,7 +14,11 @@ const PhotoMain = styled.img`
 	width: 400px;
 	height: 400px;
 
-	@media (max-width: 768px) {
+	@media screen and (max-width: 1024px) {
+		margin-top: 16px;
+	}
+
+	@media ${theme.media.tablet} {
 		width: 335px;
 		height: 335px;
 		margin-top: 30px;

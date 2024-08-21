@@ -12,6 +12,10 @@ export const MainSkills = styled.div`
 	margin-left: 250px;
 
 	gap: 12px;
+
+	@media ${theme.media.tablet} {
+		display: none;
+	}
 `
 
 export const IconsImg = styled.img`
@@ -45,6 +49,20 @@ export const Card = styled.div<CardPropsIcon>`
 	background-color: ${theme.colors.secondaryBg};
 	border-radius: 24px;
 
+	gap: 30px;
+
+	@media ${theme.media.tablet} {
+		width: 270px;
+		height: 152px;
+
+		margin-top: 75px;
+
+		padding-top: 72px;
+		font-weight: 600;
+		font-size: 33px;
+		line-height: 1.36;
+	}
+
 	&::before {
 		content: '';
 		z-index: 9999;
@@ -62,12 +80,19 @@ export const Card = styled.div<CardPropsIcon>`
 
 		box-shadow: 0 0 0 12px ${theme.colors.primaryBg};
 		border-radius: 100%;
+
+		@media ${theme.media.tablet} {
+			background-image: url(${props => props.icon});
+			background-size: 92px 92px;
+			background-repeat: no-repeat;
+
+			box-shadow: 0 0 0 20px ${theme.colors.primaryBg};
+			border-radius: 100%;
+
+			top: -40%;
+
+			width: 92px;
+			height: 92px;
+		}
 	}
-
-	gap: 30px;
-
-	/* @media (max-width: 768px) {
-		width: 270px;
-		height: 208px;
-	} */
 `

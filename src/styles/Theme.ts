@@ -8,4 +8,9 @@ export const theme = {
 		font: '#ffffff',
 		solidColor: '#4c546c',
 	},
+
+	media: {
+		tablet: 'screen and (max-width: 768px)',
+		mobile: 'screen and (max-width: 425px)',
+	},
 }

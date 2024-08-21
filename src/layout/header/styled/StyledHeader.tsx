@@ -14,7 +14,7 @@ export const StyledHeader = styled.header`
 		${theme.colors.primaryBg} 1360px
 	);
 
-	@media (max-width: 768px) {
+	@media ${theme.media.tablet} {
 		display: flex;
 		align-items: center;
 		padding: 0;

@@ -43,28 +43,40 @@ const cardProjects = [
 		desc: 'Story motion for sale',
 		descTwo: 'English cources',
 	},
+
+	{
+		id: 5,
+		image: project4,
+		name: 'Project 1',
+		desc: 'Story motion for sale',
+		descTwo: 'English cources',
+	},
+	{
+		id: 6,
+		image: project3,
+		name: 'Project 2',
+		desc: 'Story motion for sale',
+		descTwo: 'English cources',
+	},
+	{
+		id: 7,
+		image: project2,
+		name: 'Project 3',
+		desc: 'Story motion for sale',
+		descTwo: 'English cources',
+	},
+	{
+		id: 8,
+		image: project1,
+		name: 'Project 4',
+		desc: 'Story motion for sale',
+		descTwo: 'English cources',
+	},
 ]
 
 export const CardsProject = () => {
 	return (
 		<CardItems>
-			<Cards>
-				{cardProjects.map(card => (
-					<CardProject key={card.id}>
-						<PhotoContainer>
-							<Photo src={card.image} alt={card.name} />
-							<Overlay>
-								<Text>{card.desc}</Text>
-								<Text>{card.descTwo}</Text>
-								<ButtonPreview>
-									<button>Edit for you</button>
-									<a href='#'>see preview</a>
-								</ButtonPreview>
-							</Overlay>
-						</PhotoContainer>
-					</CardProject>
-				))}
-			</Cards>
 			<Cards>
 				{cardProjects.map(card => (
 					<CardProject key={card.id}>
@@ -91,6 +103,7 @@ const CardItems = styled.div`
 	width: 100%;
 
 	display: flex;
+	justify-content: center;
 	flex-direction: column;
 
 	gap: 45px;
