@@ -23,4 +23,13 @@ const MainSkillsMobileSection = styled.div`
 		justify-content: center;
 		align-items: center;
 	}
+
+	@media ${theme.media.mobile} {
+		padding-top: 50px;
+		padding-bottom: 62px;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 `

@@ -37,4 +37,10 @@ const SkillsSection = styled.div`
 		grid-template-columns: 1fr 1fr;
 		gap: 22px;
 	}
+
+	@media ${theme.media.mobile} {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 12px;
+	}
 `

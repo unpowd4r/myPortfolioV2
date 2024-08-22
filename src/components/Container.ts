@@ -14,5 +14,10 @@ export const Container = styled.div`
 		width: 100%;
 	}
 
+	@media ${theme.media.mobile} {
+		max-width: 354px;
+		width: 100%;
+	}
+
 	/* border: 1px solid red; */
 `

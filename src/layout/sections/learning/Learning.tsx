@@ -5,8 +5,8 @@ import { TitleProject } from '../projects/buttons/styledProjects/StyledProjects'
 export const Learning = () => {
 	return (
 		<LearningSection>
+			<TitleProject>Learning</TitleProject>
 			<ContainerScrollBar>
-				<TitleProject>Learning</TitleProject>
 				<LearningTechnologies>JavaScript & TypeScript</LearningTechnologies>
 				<WindowFigures>
 					<Figure></Figure>
@@ -32,7 +32,6 @@ const LearningSection = styled.section`
 `
 
 const ContainerScrollBar = styled.div`
-	/* min-width: 1358px; */
 	margin: 0 auto;
 	width: 100%;
 	min-height: 100%;

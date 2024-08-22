@@ -22,4 +22,16 @@ export const StyledHeader = styled.header`
 		background: none;
 		background-color: ${theme.colors.primaryBg};
 	}
+
+	@media ${theme.media.mobile} {
+		display: flex;
+		align-items: center;
+		padding: 0;
+		max-height: 42px;
+		background: none;
+		background-color: ${theme.colors.primaryBg};
+
+		font-weight: 400;
+		font-size: 8px;
+	}
 `

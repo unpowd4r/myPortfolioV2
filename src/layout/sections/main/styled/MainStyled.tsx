@@ -14,4 +14,8 @@ export const MainSection = styled.section`
 		min-height: 985px;
 		padding-top: 50px;
 	}
+	@media ${theme.media.mobile} {
+		min-height: 660px;
+		padding-top: 54px;
+	}
 `

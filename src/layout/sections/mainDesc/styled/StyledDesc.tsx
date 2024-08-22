@@ -73,6 +73,12 @@ export const MainPhoto = styled.div`
 		height: 845px;
 		margin-bottom: 50px;
 	}
+	@media ${theme.media.mobile} {
+		margin: 0 auto;
+		width: 330px;
+		height: 475px;
+		border-radius: 112px 0 112px 0;
+	}
 `
 
 export const MyDescMain = styled.div`
@@ -80,12 +86,20 @@ export const MyDescMain = styled.div`
 	flex-direction: column;
 
 	max-width: 465px;
+
+	@media ${theme.media.mobile} {
+		max-width: 260px;
+	}
 `
 
 export const MainButtons = styled.div`
 	display: flex;
 	align-items: center;
 	gap: 10px;
+
+	@media ${theme.media.mobile} {
+		gap: 2px;
+	}
 
 	button {
 		display: flex;
@@ -103,15 +117,31 @@ export const MainButtons = styled.div`
 
 		transition: all 0.2s ease;
 
+		@media ${theme.media.mobile} {
+			width: 112px;
+			height: 30px;
+
+			border-radius: 10px;
+		}
+
 		h5 {
 			font-weight: 600;
 			font-size: 15px;
 			transition: all 0.3s ease;
+
+			@media ${theme.media.mobile} {
+				font-size: 8px;
+			}
 		}
 
 		img {
 			opacity: 0;
 			transition: all 0.3s ease;
+
+			@media ${theme.media.mobile} {
+				width: 16px;
+				height: 16px;
+			}
 		}
 
 		&:hover {
@@ -140,6 +170,10 @@ export const MainButtons = styled.div`
 		&:hover {
 			color: ${theme.colors.font};
 		}
+
+		@media ${theme.media.mobile} {
+			font-size: 8px;
+		}
 	}
 
 	@media screen and (max-width: 1024px) {
@@ -148,5 +182,9 @@ export const MainButtons = styled.div`
 
 	@media ${theme.media.tablet} {
 		margin-bottom: 68px;
+	}
+
+	@media ${theme.media.mobile} {
+		margin-bottom: 0px;
 	}
 `

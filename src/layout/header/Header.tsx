@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { Logo } from '../../components/logo/Logo'
 import { Menu } from '../../components/menu/Menu'
 import { MoonLightNightTheme } from '../../components/moon/MoonLightNightTheme'
+import { theme } from '../../styles/Theme'
 import { FlexWrapper } from './../../components/flexWrapper/FlexWrapper'
 import { StyledHeader } from './styled/StyledHeader'
 
@@ -36,4 +37,8 @@ const HeaderMenuContainer = styled.div`
 	justify-content: center;
 
 	gap: 65px;
+
+	@media ${theme.media.mobile} {
+		gap: 32px;
+	}
 `

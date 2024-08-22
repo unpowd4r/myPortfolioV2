@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { theme } from '../../styles/Theme'
 import logoTip from '../icons/logo 1.svg'
 
 export const Logo = () => {
@@ -12,5 +13,12 @@ export const Logo = () => {
 }
 
 const LogoAs = styled.div`
-	/* margin-right: 806px; */
+	a {
+		img {
+			@media ${theme.media.mobile} {
+				height: 37px;
+				width: 37px;
+			}
+		}
+	}
 `

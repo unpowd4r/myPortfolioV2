@@ -31,6 +31,15 @@ export const TitleProject = styled.h2`
 			#a6bcfa 0%,
 			${theme.colors.accent} 100%
 		);
+
+		@media ${theme.media.mobile} {
+			width: 12px;
+			height: 12px;
+			top: 100px;
+		}
+	}
+	@media ${theme.media.mobile} {
+		font-size: 19px;
 	}
 `
 
@@ -75,8 +84,18 @@ export const ButtonsStyled = styled.div`
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-rows: auto auto;
+
 		gap: 40px;
 		margin-bottom: 62px;
+	}
+
+	@media ${theme.media.mobile} {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: auto auto;
+
+		gap: 25px;
+		margin-bottom: 38px;
 	}
 `
 
@@ -90,12 +109,24 @@ export const Cards = styled.div`
 	gap: 36px;
 	&:last-child {
 		margin-bottom: 82px;
+
+		@media ${theme.media.mobile} {
+			margin-bottom: 50px;
+		}
 	}
 
 	@media ${theme.media.tablet} {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
+
 		gap: 38px;
+	}
+
+	@media ${theme.media.mobile} {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+
+		gap: 22px;
 	}
 `
 
@@ -103,10 +134,21 @@ export const CardProject = styled.div`
 	width: 270px;
 	height: 395px;
 	border-radius: 26px;
+
+	@media ${theme.media.mobile} {
+		width: 162px;
+		height: 238px;
+		border-radius: 16px;
+	}
 `
 export const Photo = styled.img`
 	width: 270px;
 	height: 395px;
+
+	@media ${theme.media.mobile} {
+		width: 162px;
+		height: 238px;
+	}
 `
 
 export const PhotoContainer = styled.div`
@@ -114,6 +156,10 @@ export const PhotoContainer = styled.div`
 	height: 395px;
 	position: relative;
 	overflow: hidden;
+	@media ${theme.media.mobile} {
+		width: 162px;
+		height: 238px;
+	}
 `
 
 export const Overlay = styled.div`
@@ -140,6 +186,12 @@ export const Overlay = styled.div`
 	&:hover {
 		background-color: ${theme.colors.secondaryBg};
 	}
+
+	@media ${theme.media.mobile} {
+		height: 94px;
+		padding-left: 20px;
+		border-radius: 0 0 15px 15px;
+	}
 `
 
 export const Text = styled.h4`
@@ -152,6 +204,14 @@ export const Text = styled.h4`
 	color: ${theme.colors.font};
 
 	padding-bottom: 30px;
+
+	@media ${theme.media.mobile} {
+		font-size: 12px;
+
+		text-align: center;
+
+		padding-bottom: 15px;
+	}
 `
 
 export const ButtonPreview = styled.div`
@@ -160,6 +220,10 @@ export const ButtonPreview = styled.div`
 	align-items: center;
 
 	gap: 20px;
+
+	@media ${theme.media.mobile} {
+		gap: 12px;
+	}
 
 	button {
 		width: 110px;
@@ -177,6 +241,14 @@ export const ButtonPreview = styled.div`
 
 		cursor: pointer;
 
+		@media ${theme.media.mobile} {
+			font-size: 8px;
+			line-height: 1.48;
+			width: 65px;
+			height: 16px;
+			border-radius: 7px;
+		}
+
 		&:hover {
 			color: ${theme.colors.font};
 			background-color: ${theme.colors.accent};
@@ -189,6 +261,10 @@ export const ButtonPreview = styled.div`
 		font-size: 14px;
 
 		transition: all 0.2s ease;
+
+		@media ${theme.media.mobile} {
+			font-size: 8px;
+		}
 
 		&:hover {
 			color: ${theme.colors.font};

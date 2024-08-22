@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { theme } from '../../../styles/Theme'
 import { MainDesc } from '../mainDesc/MainDesc'
 import { MainSkillsSection } from '../mainSkills/MainSkills'
 import { MainSection } from './styled/MainStyled'
@@ -24,5 +25,8 @@ const ContainerMain = styled.div`
 
 	@media screen and (max-width: 1024px) {
 		padding-bottom: 50px;
+	}
+	@media ${theme.media.mobile} {
+		padding-bottom: 0;
 	}
 `

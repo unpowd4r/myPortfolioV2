@@ -40,6 +40,10 @@ const IconsSocials = styled.div`
 	padding-right: 24px;
 	padding-top: 30px;
 	padding-bottom: 18px;
+
+	@media ${theme.media.mobile} {
+		display: none;
+	}
 `
 
 const MyInfoCard = styled.div`
@@ -63,6 +67,15 @@ const MyInfoCard = styled.div`
 		rgba(0, 71, 255, 0.05) 100%
 	);
 
+	@media ${theme.media.mobile} {
+		padding-left: 30px;
+		margin-top: 48px;
+
+		border-radius: 54px 0 54px 0;
+
+		margin-left: 10px;
+	}
+
 	ul {
 		display: flex;
 		flex-direction: column;
@@ -79,6 +92,10 @@ const MyInfoCard = styled.div`
 		font-weight: 400;
 		font-size: 20px;
 		line-height: 1.36;
+
+		@media ${theme.media.mobile} {
+			font-size: 10px;
+		}
 	}
 
 	ul li::before {
@@ -92,6 +109,17 @@ const MyInfoCard = styled.div`
 		left: -12px;
 		top: 50%;
 		transform: translateY(-50%);
+
+		@media ${theme.media.mobile} {
+			width: 10px;
+			height: 10px;
+			left: 0px;
+		}
+	}
+
+	@media ${theme.media.mobile} {
+		min-width: 302px;
+		min-height: 265px;
 	}
 `
 
@@ -105,5 +133,19 @@ const MyName = styled.h2`
 
 	span {
 		color: #2157f2;
+	}
+
+	ul {
+		li {
+			@media ${theme.media.mobile} {
+				font-size: 10px;
+			}
+		}
+	}
+
+	@media ${theme.media.mobile} {
+		font-size: 32px;
+		margin-bottom: 12px;
+		padding-top: 40px;
 	}
 `

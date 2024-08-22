@@ -6,6 +6,11 @@ export const StyledMenu = styled.nav`
 		display: flex;
 		gap: 58px;
 
+		@media ${theme.media.mobile} {
+			gap: 30px;
+			display: flex;
+		}
+
 		li {
 			list-style-type: none;
 			a {

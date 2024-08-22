@@ -63,6 +63,15 @@ export const Card = styled.div<CardPropsIcon>`
 		line-height: 1.36;
 	}
 
+	@media ${theme.media.mobile} {
+		height: 112px;
+		width: 145px;
+
+		margin-top: 40px;
+		padding-top: 60px;
+		font-size: 18px;
+	}
+
 	&::before {
 		content: '';
 		z-index: 9999;
@@ -93,6 +102,20 @@ export const Card = styled.div<CardPropsIcon>`
 
 			width: 92px;
 			height: 92px;
+		}
+
+		@media ${theme.media.mobile} {
+			background-image: url(${props => props.icon});
+			background-size: 55px 55px;
+			background-repeat: no-repeat;
+
+			box-shadow: 0 0 0 10px ${theme.colors.primaryBg};
+			border-radius: 100%;
+
+			top: -25%;
+
+			width: 55px;
+			height: 55px;
 		}
 	}
 `

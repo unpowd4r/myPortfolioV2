@@ -23,4 +23,10 @@ const PhotoMain = styled.img`
 		height: 335px;
 		margin-top: 30px;
 	}
+
+	@media ${theme.media.mobile} {
+		width: 188px;
+		height: 188px;
+		margin-top: 16px;
+	}
 `
