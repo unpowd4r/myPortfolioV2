@@ -6,6 +6,7 @@ import telephoneIcon from '../../../components/icons/contactIcons/telephone.svg'
 import tgIcon from '../../../components/icons/contactIcons/tg-icon.svg'
 import wuIcon from '../../../components/icons/contactIcons/wu-icon.svg'
 import { theme } from '../../../styles/Theme'
+import { ContactsCardSectionMobile } from '../../mobileSections/ContactsCardSectionMobile'
 import { TitleProject } from '../projects/buttons/styledProjects/StyledProjects'
 
 const socialIcons = [instIcon, tgIcon, wuIcon]
@@ -26,7 +27,7 @@ export const ContactSection = () => {
 					</FormSection>
 					<SendMessageButton>Send</SendMessageButton>
 				</MessageSection>
-				<div>
+				<ContactsCardSection>
 					<ContactCard>
 						<img src={locationIcon} alt='Location' />
 						<div>
@@ -48,8 +49,9 @@ export const ContactSection = () => {
 							<span>sergey.frolov@yandex.ru</span>
 						</div>
 					</ContactCard>
-				</div>
+				</ContactsCardSection>
 			</FormSendMessage>
+			<ContactsCardSectionMobile />
 			<IconsSocialSection>
 				{socialIcons.map(icon => (
 					<IconsSocial key={icon.id} src={icon} />
@@ -68,6 +70,10 @@ const IconsSocial = styled.img`
 
 const IconsSocialSection = styled.div`
 	gap: 22px;
+
+	@media ${theme.media.tablet} {
+		margin-bottom: 52px;
+	}
 `
 
 const FormSendMessage = styled.div`
@@ -81,6 +87,11 @@ const FormSendMessage = styled.div`
 	width: 932px;
 
 	background-color: ${theme.colors.cardsColor};
+
+	@media ${theme.media.tablet} {
+		height: 462px;
+		width: 592px;
+	}
 `
 
 const ContactUsSection = styled.section`
@@ -89,8 +100,6 @@ const ContactUsSection = styled.section`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
-	height: 100vh;
 
 	background-color: ${theme.colors.primaryBg};
 `
@@ -109,6 +118,12 @@ const MessageSection = styled.div`
 	}
 `
 const FormSection = styled.div``
+
+export const ContactsCardSection = styled.div`
+	@media ${theme.media.tablet} {
+		display: none;
+	}
+`
 
 const TextMessage = styled.textarea`
 	font-weight: 400;
@@ -198,7 +213,7 @@ const SendMessageButton = styled.button`
 		color: ${theme.colors.primaryBg};
 	}
 `
-const ContactCard = styled.div`
+export const ContactCard = styled.div`
 	display: flex;
 	justify-content: start;
 
@@ -206,12 +221,25 @@ const ContactCard = styled.div`
 
 	gap: 26px;
 
+	img {
+		@media ${theme.media.tablet} {
+			height: 72px;
+			width: 72px;
+			margin: 0;
+		}
+	}
+
 	div {
 		h4 {
 			font-weight: 500;
 			font-size: 16px;
 			line-height: 1.36;
 			color: ${theme.colors.font};
+
+			@media ${theme.media.tablet} {
+				font-weight: 500;
+				font-size: 30px;
+			}
 		}
 
 		span {
@@ -219,6 +247,11 @@ const ContactCard = styled.div`
 			font-size: 12px;
 			line-height: 1.36;
 			color: #8b8b8b;
+
+			@media ${theme.media.tablet} {
+				font-weight: 400;
+				font-size: 22px;
+			}
 		}
 	}
 `

@@ -32,7 +32,7 @@ const LearningSection = styled.section`
 `
 
 const ContainerScrollBar = styled.div`
-	min-width: 1358px;
+	/* min-width: 1358px; */
 	margin: 0 auto;
 	width: 100%;
 	min-height: 100%;
