@@ -78,6 +78,13 @@ export const ButtonsStyled = styled.div`
 			background: ${theme.colors.secondaryBg};
 			cursor: pointer;
 		}
+
+		@media ${theme.media.mobile} {
+			width: 95px;
+			height: 25px;
+			font-size: 12px;
+			border-radius: 40px;
+		}
 	}
 
 	@media ${theme.media.tablet} {
