@@ -12,6 +12,10 @@ export const TitleProject = styled.h2`
 	padding-top: 60px;
 	padding-bottom: 58px;
 
+	@media ${theme.media.mobile} {
+		font-size: 22px;
+	}
+
 	::before {
 		content: '';
 		display: inline-block;
@@ -40,6 +44,10 @@ export const TitleProject = styled.h2`
 	}
 	@media ${theme.media.mobile} {
 		font-size: 19px;
+	}
+
+	@media ${theme.media.mobile} {
+		font-size: 17px;
 	}
 `
 

@@ -14,7 +14,7 @@ export const Services = () => {
 }
 
 const ServicesAll = styled.section`
-	min-height: 690px;
+	min-height: 588px;
 `
 
 const ServiceCards = styled.div`
@@ -33,6 +33,10 @@ const Title = styled.h2`
 
 	padding-top: 48px;
 	margin-bottom: 82px;
+
+	@media ${theme.media.mobile} {
+		margin-bottom: 50px;
+	}
 
 	::before {
 		content: '';
@@ -53,5 +57,15 @@ const Title = styled.h2`
 			#a6bcfa 0%,
 			${theme.colors.accent} 100%
 		);
+		@media ${theme.media.mobile} {
+			width: 10px;
+			height: 10px;
+			right: 49%;
+			top: 80px;
+		}
+	}
+
+	@media ${theme.media.mobile} {
+		font-size: 17px;
 	}
 `

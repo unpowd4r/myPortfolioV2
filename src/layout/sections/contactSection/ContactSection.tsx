@@ -92,6 +92,11 @@ const FormSendMessage = styled.div`
 		height: 462px;
 		width: 592px;
 	}
+
+	@media ${theme.media.mobile} {
+		width: 364px;
+		height: 282px;
+	}
 `
 
 const ContactUsSection = styled.section`
@@ -115,6 +120,10 @@ const MessageSection = styled.div`
 		color: ${theme.colors.font};
 
 		padding-bottom: 22px;
+
+		@media ${theme.media.mobile} {
+			font-size: 22px;
+		}
 	}
 `
 const FormSection = styled.div``
@@ -144,6 +153,12 @@ const TextMessage = styled.textarea`
 
 	resize: none;
 
+	@media ${theme.media.mobile} {
+		width: 262px;
+		height: 94px;
+		padding: 10px 16px;
+	}
+
 	&::placeholder {
 		font-weight: 400;
 		font-size: 13px;
@@ -152,6 +167,10 @@ const TextMessage = styled.textarea`
 		text-transform: capitalize;
 
 		color: #a5a5a5;
+
+		@media ${theme.media.mobile} {
+			font-size: 7px;
+		}
 	}
 
 	&:focus-visible {
@@ -183,12 +202,24 @@ const FormContacts = styled.input`
 
 	padding: 10px 30px;
 
+	@media ${theme.media.mobile} {
+		height: 22px;
+		width: 130px;
+
+		border-radius: 6px;
+		padding: 6px 16px;
+	}
+
 	&::placeholder {
 		font-weight: 400;
 		font-size: 13px;
 		line-height: 1.36;
 		color: #a5a5a5;
 		text-transform: capitalize;
+
+		@media ${theme.media.mobile} {
+			font-size: 7px;
+		}
 	}
 
 	&:focus-visible {
@@ -208,6 +239,13 @@ const SendMessageButton = styled.button`
 
 	transition: all 0.2s ease;
 
+	@media ${theme.media.mobile} {
+		width: 72px;
+		height: 26px;
+
+		font-size: 9px;
+	}
+
 	&:hover {
 		background-color: ${theme.colors.font};
 		color: ${theme.colors.primaryBg};
@@ -226,6 +264,11 @@ export const ContactCard = styled.div`
 			height: 72px;
 			width: 72px;
 			margin: 0;
+
+			@media ${theme.media.mobile} {
+				width: 45px;
+				height: 45px;
+			}
 		}
 	}
 
@@ -240,6 +283,9 @@ export const ContactCard = styled.div`
 				font-weight: 500;
 				font-size: 30px;
 			}
+			@media ${theme.media.mobile} {
+				font-size: 18px;
+			}
 		}
 
 		span {
@@ -251,6 +297,9 @@ export const ContactCard = styled.div`
 			@media ${theme.media.tablet} {
 				font-weight: 400;
 				font-size: 22px;
+			}
+			@media ${theme.media.mobile} {
+				font-size: 14px;
 			}
 		}
 	}

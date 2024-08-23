@@ -60,4 +60,11 @@ const ContactWindow = styled.div`
 
 	padding-left: 108px;
 	gap: 30px;
+
+	@media ${theme.media.mobile} {
+		width: 364px;
+		height: 308px;
+		padding-left: 65px;
+		gap: 0;
+	}
 `

@@ -69,11 +69,26 @@ const Block = styled.div`
 
 	background-color: ${theme.colors.cardsColor};
 
+	@media ${theme.media.mobile} {
+		width: 155px;
+		height: 188px;
+
+		padding-left: 28px;
+		padding-top: 55px;
+	}
+
 	img {
 		height: 75px;
 		width: 75px;
 
 		margin-bottom: 28px;
+
+		@media ${theme.media.mobile} {
+			width: 34px;
+			height: 34px;
+
+			margin-bottom: 12px;
+		}
 	}
 
 	h2 {
@@ -102,6 +117,11 @@ const Block = styled.div`
 		img {
 			width: 20px;
 			height: 20px;
+
+			@media ${theme.media.mobile} {
+				width: 10px;
+				height: 10px;
+			}
 		}
 	}
 
@@ -113,25 +133,48 @@ const Block = styled.div`
 		height: 336px;
 		width: 280px;
 
+		@media ${theme.media.mobile} {
+			width: 155px;
+			height: 188px;
+		}
+
 		h2 {
 			font-weight: 500;
 			font-size: 26px;
 			line-height: 1.25;
+
+			@media ${theme.media.mobile} {
+				font-size: 14px;
+			}
 		}
 
 		p {
 			font-weight: 400;
 			font-size: 13px;
 
+			@media ${theme.media.mobile} {
+				font-size: 7px;
+			}
+
 			img {
 				height: 16px;
 				width: 16px;
+
+				@media ${theme.media.mobile} {
+					width: 10px;
+					height: 10px;
+				}
 			}
 		}
 
 		img {
 			width: 62px;
 			height: 62px;
+
+			@media ${theme.media.mobile} {
+				width: 35px;
+				height: 35px;
+			}
 		}
 	}
 `
