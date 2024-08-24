@@ -41,8 +41,12 @@ export const MainPhoto = styled.div`
 		top: -125px;
 		left: 522px;
 		@media ${theme.media.tablet} {
+			display: none;
 			top: -100px;
 			left: 490px;
+		}
+		@media ${theme.media.mobile} {
+			display: none;
 		}
 	}
 
@@ -69,13 +73,15 @@ export const MainPhoto = styled.div`
 
 	@media ${theme.media.tablet} {
 		margin: 0 auto;
-		width: 590px;
+		max-width: 590px;
+		width: 100%;
 		height: 845px;
 		margin-bottom: 50px;
 	}
 	@media ${theme.media.mobile} {
 		margin: 0 auto;
-		width: 330px;
+		max-width: 330px;
+		width: 100%;
 		height: 475px;
 		border-radius: 112px 0 112px 0;
 	}

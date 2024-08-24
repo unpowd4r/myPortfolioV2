@@ -12,10 +12,10 @@ export const MainSkillMobileSection = () => {
 
 const MainSkillsMobileSection = styled.div`
 	display: none;
+	padding: 100px 70px;
 
 	@media ${theme.media.tablet} {
-		padding-top: 68px;
-		padding-bottom: 82px;
+		padding: 100px 70px;
 
 		background-color: ${theme.colors.primaryBg};
 
@@ -25,8 +25,7 @@ const MainSkillsMobileSection = styled.div`
 	}
 
 	@media ${theme.media.mobile} {
-		padding-top: 50px;
-		padding-bottom: 62px;
+		padding: 60px 50px;
 
 		display: flex;
 		justify-content: center;

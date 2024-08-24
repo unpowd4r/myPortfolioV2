@@ -10,7 +10,11 @@ export const Header = () => {
 	return (
 		<StyledHeader>
 			<ContainerHeader>
-				<FlexWrapper justify={'space-between'} align={'center'}>
+				<FlexWrapper
+					justify={'space-between'}
+					align={'center'}
+					maxWidth={'768px'}
+				>
 					<Logo />
 					<HeaderMenuContainer>
 						<Menu />
@@ -35,6 +39,9 @@ const HeaderMenuContainer = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	max-width: 478px;
+	width: 100%;
 
 	gap: 65px;
 

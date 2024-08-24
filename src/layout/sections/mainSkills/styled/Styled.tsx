@@ -43,17 +43,21 @@ export const Card = styled.div<CardPropsIcon>`
 	font-size: 20px;
 
 	height: 90px;
-	width: 160px;
+	max-width: 270px;
+	width: 100%;
 
 	box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.15);
 	background-color: ${theme.colors.secondaryBg};
 	border-radius: 24px;
+	flex-grow: 1;
 
 	gap: 30px;
 
 	@media ${theme.media.tablet} {
-		width: 270px;
+		max-width: 270px;
+		width: 100%;
 		height: 152px;
+		flex-grow: 1;
 
 		margin-top: 75px;
 
@@ -64,11 +68,14 @@ export const Card = styled.div<CardPropsIcon>`
 	}
 
 	@media ${theme.media.mobile} {
-		height: 112px;
-		width: 145px;
+		max-width: 145px;
+		width: 100%;
+		height: 82px;
+
+		flex-grow: 1;
 
 		margin-top: 40px;
-		padding-top: 60px;
+		padding-top: 38px;
 		font-size: 18px;
 	}
 
@@ -77,11 +84,12 @@ export const Card = styled.div<CardPropsIcon>`
 		z-index: 9999;
 		position: absolute;
 
-		width: 55px;
+		max-width: 55px;
+		width: 100%;
 		height: 55px;
 
 		top: -32px;
-		left: 34%;
+		left: 30%;
 
 		background-image: url(${props => props.icon});
 		background-size: 55px 55px;
@@ -98,9 +106,11 @@ export const Card = styled.div<CardPropsIcon>`
 			box-shadow: 0 0 0 20px ${theme.colors.primaryBg};
 			border-radius: 100%;
 
+			left: 30%;
 			top: -40%;
 
-			width: 92px;
+			max-width: 92px;
+			width: 100%;
 			height: 92px;
 		}
 
@@ -112,7 +122,7 @@ export const Card = styled.div<CardPropsIcon>`
 			box-shadow: 0 0 0 10px ${theme.colors.primaryBg};
 			border-radius: 100%;
 
-			top: -25%;
+			top: -35%;
 
 			width: 55px;
 			height: 55px;

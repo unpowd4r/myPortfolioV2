@@ -27,6 +27,8 @@ export const SkillCards = () => {
 }
 
 const SkillsSection = styled.div`
+	max-width: 565px;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 

@@ -67,7 +67,7 @@ export const ButtonsStyled = styled.div`
 	margin-bottom: 55px;
 
 	button {
-		width: 160px;
+		max-width: 160px;
 		height: 42px;
 
 		font-size: 20px;
@@ -88,7 +88,7 @@ export const ButtonsStyled = styled.div`
 		}
 
 		@media ${theme.media.mobile} {
-			width: 95px;
+			max-width: 95px;
 			height: 25px;
 			font-size: 12px;
 			border-radius: 40px;
@@ -146,7 +146,7 @@ export const Cards = styled.div`
 `
 
 export const CardProject = styled.div`
-	width: 270px;
+	max-width: 270px;
 	height: 395px;
 	border-radius: 26px;
 
@@ -157,22 +157,22 @@ export const CardProject = styled.div`
 	}
 `
 export const Photo = styled.img`
-	width: 270px;
+	max-width: 270px;
 	height: 395px;
 
 	@media ${theme.media.mobile} {
-		width: 162px;
+		max-width: 162px;
 		height: 238px;
 	}
 `
 
 export const PhotoContainer = styled.div`
-	width: 270px;
+	max-width: 270px;
 	height: 395px;
 	position: relative;
 	overflow: hidden;
 	@media ${theme.media.mobile} {
-		width: 162px;
+		max-width: 162px;
 		height: 238px;
 	}
 `
