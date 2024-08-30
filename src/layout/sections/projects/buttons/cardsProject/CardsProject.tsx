@@ -19,58 +19,50 @@ const cardProjects = [
 		id: 1,
 		image: project4,
 		name: 'Project 1',
-		desc: 'Story motion for sale',
-		descTwo: 'English cources',
+		desc: 'Story motion for sale English cources',
 	},
 	{
 		id: 2,
 		image: project3,
 		name: 'Project 2',
-		desc: 'Story motion for sale',
-		descTwo: 'English cources',
+		desc: 'Story motion for sale English cources',
 	},
 	{
 		id: 3,
 		image: project2,
 		name: 'Project 3',
-		desc: 'Story motion for sale',
-		descTwo: 'English cources',
+		desc: 'Story motion for sale English cources',
 	},
 	{
 		id: 4,
 		image: project1,
 		name: 'Project 4',
-		desc: 'Story motion for sale',
-		descTwo: 'English cources',
+		desc: 'Story motion for sale English cources',
 	},
 
 	{
 		id: 5,
 		image: project4,
 		name: 'Project 1',
-		desc: 'Story motion for sale',
-		descTwo: 'English cources',
+		desc: 'Story motion for sale English cources',
 	},
 	{
 		id: 6,
 		image: project3,
 		name: 'Project 2',
-		desc: 'Story motion for sale',
-		descTwo: 'English cources',
+		desc: 'Story motion for sale English cources',
 	},
 	{
 		id: 7,
 		image: project2,
 		name: 'Project 3',
-		desc: 'Story motion for sale',
-		descTwo: 'English cources',
+		desc: 'Story motion for sale English cources',
 	},
 	{
 		id: 8,
 		image: project1,
 		name: 'Project 4',
-		desc: 'Story motion for sale',
-		descTwo: 'English cources',
+		desc: 'Story motion for sale English cources',
 	},
 ]
 
@@ -84,7 +76,7 @@ export const CardsProject = () => {
 							<Photo src={card.image} alt={card.name} />
 							<Overlay>
 								<Text>{card.desc}</Text>
-								<Text>{card.descTwo}</Text>
+
 								<ButtonPreview>
 									<button>Edit for you</button>
 									<a href='#'>see preview</a>

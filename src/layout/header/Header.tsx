@@ -27,6 +27,8 @@ export const Header = () => {
 }
 
 const ContainerHeader = styled.div`
+	position: relative;
+	overflow: hidden;
 	max-width: 1440px;
 	width: 100%;
 

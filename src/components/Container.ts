@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { theme } from './../styles/Theme'
 
 export const Container = styled.div`
+	position: relative;
 	max-width: 1220px;
 	width: 100%;
 	min-height: 100%;

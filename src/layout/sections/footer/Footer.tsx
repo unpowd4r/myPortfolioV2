@@ -27,7 +27,7 @@ const FooterSection = styled.footer`
 
 	background: #222;
 	background-image: url(${wave}), url(${wave});
-	background-size: cover, auto;
+	background-size: contain, auto;
 	background-position: center, bottom;
 	background-repeat: no-repeat;
 

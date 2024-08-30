@@ -3,14 +3,14 @@ import cardImage from '../../../components/img/infoImg/card.svg'
 import { theme } from '../../../styles/Theme'
 
 export const MyInfo = styled.section`
-	min-height: 945px;
+	/* height: 945px; */
 
 	display: flex;
 	justify-content: space-between;
 
-	background-image: url(${cardImage});
+	/* background-image: url(${cardImage});
 	background-repeat: no-repeat;
-	background-position: 42px center;
+	background-position: 42px center; */
 	background-color: #a6bcfa;
 
 	@media ${theme.media.tablet} {
@@ -21,11 +21,13 @@ export const MyInfo = styled.section`
 `
 
 export const MyPhoto = styled.img`
-	width: 820px;
-	height: 945px;
+	/* max-width: 820px; */
+	width: 100%;
+	object-fit: contain;
 
 	@media ${theme.media.tablet} {
-		width: 495px;
-		height: 570px;
+		max-width: 495px;
+		width: 100%;
+		object-fit: contain;
 	}
 `

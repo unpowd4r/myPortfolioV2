@@ -52,6 +52,8 @@ export const TitleProject = styled.h2`
 `
 
 export const ProjectSection = styled.section`
+	overflow: hidden;
+	position: relative;
 	min-height: 1245px;
 `
 
@@ -68,6 +70,7 @@ export const ButtonsStyled = styled.div`
 
 	button {
 		max-width: 160px;
+		width: 100%;
 		height: 42px;
 
 		font-size: 20px;
@@ -147,11 +150,13 @@ export const Cards = styled.div`
 
 export const CardProject = styled.div`
 	max-width: 270px;
+	width: 100%;
 	height: 395px;
 	border-radius: 26px;
 
 	@media ${theme.media.mobile} {
-		width: 162px;
+		max-width: 162px;
+		width: 100%;
 		height: 238px;
 		border-radius: 16px;
 	}
@@ -188,11 +193,12 @@ export const Overlay = styled.div`
 	bottom: 0;
 	left: 0;
 
+	max-width: 270px;
 	width: 100%;
 	height: 155px;
 
 	background-color: #353535;
-	padding-left: 32px;
+	padding: 33px 18px;
 	border-radius: 0 0 25px 25px;
 	color: ${theme.colors.font};
 
@@ -212,7 +218,7 @@ export const Overlay = styled.div`
 export const Text = styled.h4`
 	font-weight: 700;
 	font-size: 20px;
-	line-height: 0;
+	line-height: 1.2;
 
 	text-align: center;
 

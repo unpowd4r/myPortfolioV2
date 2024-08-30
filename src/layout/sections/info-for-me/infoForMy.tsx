@@ -1,7 +1,9 @@
 import styled from 'styled-components'
+import { Container } from '../../../components/Container'
 import instagramIcon from '../../../components/icons/infoForMe-icons/ins.svg'
 import arrowIcon from '../../../components/icons/infoForMe-icons/vector.svg'
 import whatsappIcon from '../../../components/icons/infoForMe-icons/wa.svg'
+import cardImage from '../../../components/img/infoImg/card.svg'
 import myPhoto from '../../../components/img/infoImg/me.png'
 import { theme } from '../../../styles/Theme'
 import { MyInfo, MyPhoto } from './infoForMe.styled'
@@ -9,37 +11,67 @@ import { MyInfo, MyPhoto } from './infoForMe.styled'
 export const InfoForMe = () => {
 	return (
 		<MyInfo>
-			<MyInfoCard>
-				<IconsSocials>
-					<img src={whatsappIcon} alt='whatsapp' />
-					<img src={instagramIcon} alt='instagram' />
-					<img src={arrowIcon} alt='arrow' />
-				</IconsSocials>
-				<MyName>
-					I'm <span>Frolov</span> <br /> Sergei Mikhailovich
-				</MyName>
-				<ul>
-					<li>I was born in Iran-Mashhad</li>
-					<li>I’m 25 years old</li>
-					<li>I have started my interest in this field from 2019</li>
-					<li>I’m designer , video editor , web developer and ...</li>
-					<li>My phone number in Iran +989212073348</li>
-				</ul>
-			</MyInfoCard>
-			<MyPhoto src={myPhoto} alt='Photo' />
+			<Container>
+				<Wrapper>
+					<MyInfoCard>
+						<IconsSocials>
+							<img src={whatsappIcon} alt='whatsapp' />
+							<img src={instagramIcon} alt='instagram' />
+							<img src={arrowIcon} alt='arrow' />
+						</IconsSocials>
+						<MyName>
+							I'm <span>Frolov</span> <br /> Sergei Mikhailovich
+						</MyName>
+						<ul>
+							<li>I was born in Iran-Mashhad</li>
+							<li>I’m 25 years old</li>
+							<li>I have started my interest in this field from 2019</li>
+							<li>I’m designer , video editor , web developer and ...</li>
+							<li>My phone number in Iran +989212073348</li>
+						</ul>
+					</MyInfoCard>
+					<PhotoContainer>
+						<MyPhoto src={myPhoto} alt='Photo' />
+					</PhotoContainer>
+				</Wrapper>
+			</Container>
 		</MyInfo>
 	)
 }
 
+const Wrapper = styled.div`
+	display: flex;
+
+	background-image: url(${cardImage});
+	background-repeat: no-repeat;
+	background-position: 42px center;
+
+	align-items: flex-end;
+	min-height: 946px;
+
+	@media screen and (max-width: 1300px) {
+		min-height: 1108px;
+		flex-direction: column;
+		background-position: 42px bottom;
+	}
+`
+
+const PhotoContainer = styled.div`
+	position: absolute;
+	max-width: 820px;
+	max-height: 945px;
+	right: -200px;
+	bottom: 0;
+
+	@media screen and (max-width: 1100px) {
+		position: relative;
+	}
+`
+
 const IconsSocials = styled.div`
 	display: flex;
-	justify-content: flex-end;
-
+	justify-content: end;
 	gap: 16px;
-
-	padding-right: 24px;
-	padding-top: 30px;
-	padding-bottom: 18px;
 
 	@media ${theme.media.mobile} {
 		display: none;
@@ -49,14 +81,19 @@ const IconsSocials = styled.div`
 const MyInfoCard = styled.div`
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	align-self: flex-end;
 
-	margin-top: 400px;
+	/* margin-top: 400px;
 	margin-left: 115px;
 	margin-bottom: 55px;
-	padding-left: 58px;
+	padding-left: 58px; */
 
-	min-width: 562px;
-	min-height: 490px;
+	min-width: 565px;
+	height: 490px;
+	padding: 65px 45px;
+	/* width: 100%;
+	min-height: 490px; */
 
 	border: 1px solid ${theme.colors.font};
 	border-radius: 100px 0 100px 0;
@@ -67,13 +104,15 @@ const MyInfoCard = styled.div`
 		rgba(0, 71, 255, 0.05) 100%
 	);
 
+	@media screen and (max-width: 1100px) {
+		align-self: center;
+	}
+
 	@media ${theme.media.mobile} {
-		padding-left: 30px;
+		padding: 65px 45px;
 		margin-top: 48px;
 
 		border-radius: 54px 0 54px 0;
-
-		margin-left: 10px;
 	}
 
 	ul {
@@ -126,8 +165,8 @@ const MyInfoCard = styled.div`
 const MyName = styled.h2`
 	color: #393939;
 	font-weight: 700;
-	font-size: 56px;
-	line-height: 1.36;
+	font-size: 48px;
+	line-height: 1.2;
 
 	margin-bottom: 22px;
 
