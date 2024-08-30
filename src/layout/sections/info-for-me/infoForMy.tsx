@@ -52,7 +52,11 @@ const Wrapper = styled.div`
 	@media screen and (max-width: 1300px) {
 		min-height: 1108px;
 		flex-direction: column;
-		background-position: 42px bottom;
+		background-image: none;
+	}
+
+	@media ${theme.media.mobile} {
+		min-height: 668px;
 	}
 `
 
@@ -60,11 +64,22 @@ const PhotoContainer = styled.div`
 	position: absolute;
 	max-width: 820px;
 	max-height: 945px;
-	right: -200px;
+	right: -40px;
 	bottom: 0;
 
-	@media screen and (max-width: 1100px) {
-		position: relative;
+	@media screen and (max-width: 1300px) {
+		right: 0;
+		bottom: -5px;
+	}
+
+	@media ${theme.media.tablet} {
+		right: -100px;
+		bottom: -5px;
+	}
+
+	@media ${theme.media.mobile} {
+		right: -25px;
+		bottom: -5px;
 	}
 `
 
@@ -84,16 +99,10 @@ const MyInfoCard = styled.div`
 	justify-content: center;
 	align-self: flex-end;
 
-	/* margin-top: 400px;
-	margin-left: 115px;
-	margin-bottom: 55px;
-	padding-left: 58px; */
-
 	min-width: 565px;
 	height: 490px;
-	padding: 65px 45px;
-	/* width: 100%;
-	min-height: 490px; */
+	padding: 10px 25px 45px 65px;
+	margin-bottom: 55px;
 
 	border: 1px solid ${theme.colors.font};
 	border-radius: 100px 0 100px 0;
@@ -104,13 +113,17 @@ const MyInfoCard = styled.div`
 		rgba(0, 71, 255, 0.05) 100%
 	);
 
-	@media screen and (max-width: 1100px) {
+	@media screen and (max-width: 1300px) {
 		align-self: center;
+		margin-top: 70px;
 	}
 
 	@media ${theme.media.mobile} {
 		padding: 65px 45px;
 		margin-top: 48px;
+		width: 302px;
+		height: 265px;
+		line-height: 1.2;
 
 		border-radius: 54px 0 54px 0;
 	}
@@ -120,7 +133,7 @@ const MyInfoCard = styled.div`
 		flex-direction: column;
 		gap: 10px;
 
-		padding-left: 12px;
+		padding-left: 0px;
 	}
 
 	li {
@@ -183,8 +196,8 @@ const MyName = styled.h2`
 	}
 
 	@media ${theme.media.mobile} {
-		font-size: 32px;
+		font-size: 22px;
 		margin-bottom: 12px;
-		padding-top: 40px;
+		/* padding-top: 38px; */
 	}
 `

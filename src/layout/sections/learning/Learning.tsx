@@ -1,27 +1,30 @@
 import styled from 'styled-components'
+import { Container } from '../../../components/Container'
 import { theme } from '../../../styles/Theme'
 import { TitleProject } from '../projects/buttons/styledProjects/StyledProjects'
 
 export const Learning = () => {
 	return (
 		<LearningSection>
-			<TitleProject>Learning</TitleProject>
-			<ContainerScrollBar>
-				<LearningTechnologies>JavaScript & TypeScript</LearningTechnologies>
-				<WindowFigures>
-					<Figure></Figure>
-					<Figure></Figure>
-					<Figure></Figure>
-					<Figure></Figure>
-				</WindowFigures>
-				<LearningTechnologies>HTML, CSS & React</LearningTechnologies>
-				<WindowFigures>
-					<Figure></Figure>
-					<Figure></Figure>
-					<Figure></Figure>
-					<Figure></Figure>
-				</WindowFigures>
-			</ContainerScrollBar>
+			<Container>
+				<TitleProject>Learning</TitleProject>
+				<ContainerScrollBar>
+					<LearningTechnologies>JavaScript & TypeScript</LearningTechnologies>
+					<WindowFigures>
+						<Figure></Figure>
+						<Figure></Figure>
+						<Figure></Figure>
+						<Figure></Figure>
+					</WindowFigures>
+					<LearningTechnologies>HTML, CSS & React</LearningTechnologies>
+					<WindowFigures>
+						<Figure></Figure>
+						<Figure></Figure>
+						<Figure></Figure>
+						<Figure></Figure>
+					</WindowFigures>
+				</ContainerScrollBar>
+			</Container>
 		</LearningSection>
 	)
 }
@@ -49,8 +52,6 @@ const LearningTechnologies = styled.h2`
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 1.36;
-
-	margin-left: 78px;
 
 	padding-bottom: 10px;
 `

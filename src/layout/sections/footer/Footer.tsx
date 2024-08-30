@@ -26,10 +26,8 @@ const FooterSection = styled.footer`
 	min-height: 245px;
 
 	background: #222;
-	background-image: url(${wave}), url(${wave});
-	background-size: contain, auto;
-	background-position: center, bottom;
-	background-repeat: no-repeat;
+	background-image: url(${wave});
+	background-size: cover;
 
 	h2 {
 		font-family: 'Inter', sans-serif;

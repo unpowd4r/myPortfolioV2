@@ -27,7 +27,7 @@ export const MainPhoto = styled.div`
 		rgba(0, 68, 255, 0.093) 100%
 	);
 
-	&::before {
+	/* &::before {
 		position: absolute;
 		z-index: -1;
 		content: '+';
@@ -48,7 +48,7 @@ export const MainPhoto = styled.div`
 		@media ${theme.media.mobile} {
 			display: none;
 		}
-	}
+	} */
 
 	/* &::after {
 		position: absolute;

@@ -1,3 +1,4 @@
+import styled from 'styled-components'
 import { Buttons } from './buttons/Buttons'
 import { Photo } from './photo/Photo'
 import { MainPhoto, MyDescMain } from './styled/StyledDesc'
@@ -14,3 +15,5 @@ export const MainDesc = () => {
 		</MainPhoto>
 	)
 }
+
+const FigureSection = styled.div``
