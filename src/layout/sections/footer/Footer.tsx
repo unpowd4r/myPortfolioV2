@@ -1,11 +1,20 @@
 import styled from 'styled-components'
+import Typewriter from 'typewriter-effect'
 import wave from '../../../components/img/footerWaves/Wave.svg'
 import { theme } from '../../../styles/Theme'
 
 export const Footer = () => {
 	return (
 		<FooterSection>
-			<h2>Coded by Frolov Sergei Mikhailovich</h2>
+			<h2>
+				<Typewriter
+					options={{
+						strings: ['Coded by Frolov Sergei Mikhailovich'],
+						autoStart: true,
+						loop: true,
+					}}
+				/>
+			</h2>
 			<span>All Rights Reserved 2024</span>
 		</FooterSection>
 	)
@@ -34,6 +43,15 @@ const FooterSection = styled.footer`
 		font-weight: 700;
 		font-size: 16px;
 		color: ${theme.colors.font};
+
+		div {
+			span {
+				font-family: 'Inter', sans-serif;
+				font-weight: 700;
+				font-size: 16px;
+				color: ${theme.colors.font};
+			}
+		}
 	}
 
 	span {

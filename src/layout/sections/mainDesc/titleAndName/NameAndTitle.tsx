@@ -28,6 +28,7 @@ const SectionNameAndTitle = styled.div`
 		line-height: 1.36;
 
 		padding-bottom: 20px;
+		color: white;
 
 		@media ${theme.media.mobile} {
 			font-size: 29px;
