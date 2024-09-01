@@ -111,6 +111,8 @@ const FormSendMessage = styled.div`
 	justify-content: space-around;
 	align-items: center;
 
+	border-radius: 10px;
+
 	margin-bottom: 65px;
 
 	height: 462px;

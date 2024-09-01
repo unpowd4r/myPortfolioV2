@@ -45,6 +45,7 @@ const ContactSection = styled.div`
 	max-width: 594px;
 	width: 100%;
 	background-color: ${theme.colors.cardsColor};
+	border-radius: 10px;
 
 	@media ${theme.media.tablet} {
 		padding-top: 20px;
@@ -83,7 +84,7 @@ const ContactWindow = styled.div`
 	justify-content: space-evenly;
 	align-items: start;
 
-	margin-left: 60px;
+	margin-left: 40px;
 
 	max-width: 592px;
 	width: 100%;
